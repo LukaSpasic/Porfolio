@@ -1,0 +1,90 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #0a85dd;
+}
+
+article {
+  width: 75%;
+  margin: 60px auto;
+}
+
+/* NAVBAR */
+.verify-button {
+  height: 32px;
+  width: 32px;
+  padding: 0 4px;
+}
+
+.navbar-toggler {
+  margin-right: 12px;
+}
+
+.ul-nav {
+  padding-bottom: 15px;
+}
+
+.nav-link {
+  transition: all 3s;
+}
+
+.nav-item {
+  font-size: 24px;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid #0a85dd;
+  padding: 0px;
+  transition: 0.1s;
+}
+
+h5 {
+  font-size: xx-large;
+}
+
+.offcanvas-title {
+  text-decoration: underline var(--blue);
+}
+
+.container-fluid {
+  padding: 0;
+  width: 100%;
+}
+
+.nav-bar {
+  margin-bottom: 48px;
+}
+
+/* NAVBAR END */
+
+p{
+  text-align: center;
+}
+
+.h1{
+  font-size: 62px;
+  text-decoration: underline 3px var(--blue);
+}
+
+
+/* FORM */
+
+.section-form {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+/* FORM END */

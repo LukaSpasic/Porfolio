@@ -1,0 +1,207 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --blue: #0a85dd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVABAR */
+.verify-button {
+  height: 32px;
+  width: 32px;
+  padding: 0 4px;
+}
+
+.navbar-toggler {
+  margin-right: 12px;
+}
+
+.ul-nav {
+  padding-bottom: 15px;
+}
+
+.nav-link {
+  transition: all 3s;
+}
+
+.nav-item {
+  font-size: 24px;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid #0a85dd;
+  padding: 0px;
+  transition: 0.1s;
+}
+
+h5 {
+  font-size: xx-large;
+}
+
+.offcanvas-title {
+  text-decoration: underline var(--blue);
+}
+
+.container-fluid {
+  padding: 0;
+  width: 100%;
+}
+
+.nav-bar {
+  margin-bottom: 48px;
+}
+
+/* NAVBAR ENDS */
+
+.portfolio-section {
+  width: 70%;
+  margin: 0 auto;
+  border-left: 5px solid var(--blue);
+  border-right: 5px solid var(--blue);
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.h3 {
+  text-decoration: underline var(--blue);
+  margin-bottom: 30px;
+}
+
+.row {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  height: 70px;
+  background-color: var(--blue);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.instagram,
+.twitter,
+.youtube {
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+}
+
+.insta-icon,
+.twitter-icon,
+.youtube-icon {
+  height: 48px;
+  width: 48px;
+}
+
+.insta-link,
+.twitter-link,
+.youtube-link {
+  text-decoration: none;
+  font-size: 24px;
+  color: #000;
+}
+
+.insta-link:hover,
+.twitter-link:hover,
+.youtube-link:hover {
+  color: #000;
+}
+
+p {
+  text-align: center;
+}
+.web-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.web-link:hover {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: underline #000;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 550px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .instagram,
+  .twitter,
+  .youtube {
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .insta-icon,
+  .twitter-icon,
+  .youtube-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .insta-link,
+  .twitter-link,
+  .youtube-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .insta-link:hover,
+  .twitter-link:hover,
+  .youtube-link:hover {
+    color: #000;
+  }
+
+  .youtube {
+    padding-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  .youtube {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .portfolio-section {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .footer {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  h1{
+    font-size: 32px;
+  }
+}

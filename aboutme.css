@@ -1,0 +1,98 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #0a85dd;
+}
+
+article {
+  width: 75%;
+  margin: 60px auto;
+}
+
+/* NAVBAR */
+
+.verify-button {
+  height: 32px;
+  width: 32px;
+  padding: 0 4px;
+}
+
+.navbar-toggler {
+  margin-right: 12px;
+}
+
+.ul-nav {
+  padding-bottom: 15px;
+}
+
+.nav-link {
+  transition: all 3s;
+}
+
+.nav-item {
+  font-size: 24px;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid #0a85dd;
+  padding: 0px;
+  transition: 0.1s;
+}
+
+h5 {
+  font-size: xx-large;
+}
+
+.offcanvas-title {
+  text-decoration: underline var(--blue);
+}
+
+.container-fluid {
+  padding: 0;
+  width: 100%;
+}
+
+.nav-bar {
+  margin-bottom: 48px;
+}
+
+.hero-title{
+  text-align: center;
+  text-decoration:underline var(--blue);
+  margin-bottom: 48px;
+}
+
+.row{
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.row:last-child{
+  margin-bottom: 0;
+}
+
+.row h3{
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h4{
+  padding: 0 12px;
+  font-size: 26px;
+  font-weight: bold;
+  border-bottom: 3px solid var(--blue);
+}
