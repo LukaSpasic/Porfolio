@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/aboutme.css" />
+    <title>O meni</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-light fixed-top"
+      style="background-color: #0a85dd"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand nav-name" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="verify-button"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            />
+          </svg>
+          <strong>Luka Spasic</strong>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Glavni meni
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ul-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Pocetna</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="aboutme.html">O meni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <article class="hero">
+      <h1 class="hero-title">Moj put ka front-end developeru...</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Osnovne tehnologije</h3>
+          </div>
+          <div class="col-md-8">
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    HTML
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus inventore reprehenderit voluptatum explicabo
+                    deleniti excepturi commodi, perferendis nobis obcaecati,
+                    autem beatae dignissimos quis modi odit atque eum, molestiae
+                    dolorem. Aperiam?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    CSS
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit doloremque soluta suscipit illo molestiae
+                    natus officiis quisquam omnis aspernatur vel tenetur sit,
+                    nostrum qui distinctio obcaecati, praesentium libero quam
+                    ullam!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    JavaScript
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Illum beatae atque nulla ipsa, nobis aperiam est non cum
+                    enim earum qui ex recusandae eius? Cupiditate, fugit error?
+                    Ratione, fugiat dignissimos!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <img
+              src="img/arrow-png.png"
+              alt=""
+              style="width: 200px"
+              class="float-end"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="text-end">HTML</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+              excepturi officiis, dolores dolorem fugiat voluptate error quo
+              debitis, non rem ex incidunt aperiam ab a eius in magni
+              voluptatibus suscipit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Autem, sed dolores dolore corporis incidunt
+              dolorem atque sit hic eligendi, amet qui repellendus eum ipsa esse
+              facilis totam, vero mollitia cumque?
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <img
+              src="img/arrow-png-rotate.png"
+              alt=""
+              style="width: 200px"
+              class="float-start"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="text-start">CSS</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+              excepturi officiis, dolores dolorem fugiat voluptate error quo
+              debitis, non rem ex incidunt aperiam ab a eius in magni
+              voluptatibus suscipit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Autem, sed dolores dolore corporis incidunt
+              dolorem atque sit hic eligendi, amet qui repellendus eum ipsa esse
+              facilis totam, vero mollitia cumque?
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <img
+              src="img/arrow-png.png"
+              alt=""
+              style="width: 200px"
+              class="float-end"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="text-end">JavaScript</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+              excepturi officiis, dolores dolorem fugiat voluptate error quo
+              debitis, non rem ex incidunt aperiam ab a eius in magni
+              voluptatibus suscipit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Autem, sed dolores dolore corporis incidunt
+              dolorem atque sit hic eligendi, amet qui repellendus eum ipsa esse
+              facilis totam, vero mollitia cumque?
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Luka Spasic</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-light fixed-top"
+      style="background-color: #0a85dd"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand nav-name" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="verify-button"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            />
+          </svg>
+          <strong>Luka Spasic</strong>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Glavni meni
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ul-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Pocetna</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="aboutme.html">O meni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <article>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/prva-slika.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/druga-slika.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/treca-slika.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </article> -->
+    <article class="hero">
+      <h1 class="hero-header">Dobrodosli na moj sajt!</h1>
+      <div class="hero-aboutme container-fluid">
+        <div class="row">
+          <div class="col-md-5 align-self-center">
+            <img
+              src="img/hero-mojaslika.jpeg"
+              alt="Moja malenkost👍"
+              class="hero-photo img-fluid float-end"
+            />
+          </div>
+          <div class="col-md-7">
+            <h4>Nesto kratko o meni</h4>
+            <p class="hero-p h4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
+              suscipit reiciendis aliquam, a odit autem aut blanditiis. Pariatur
+              consequuntur atque, deleniti vel repudiandae expedita officiis
+              quidem recusandae amet doloremque eum? Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Modi eveniet expedita dolorum, iure
+              veniam excepturi eius tenetur quas consequatur officiis
+              exercitationem voluptas dicta! Sequi non exercitationem corrupti
+              voluptatem odio tenetur? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Expedita quis perferendis laboriosam nihil
+              architecto tenetur ipsum corrupti iure quas at. Quos repellat
+              doloribus consequatur accusamus autem in, vel beatae aliquid.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- POSTAVI ZA ZANIMLJIV NACIN ZA VRACANJE NA POCETAK 
+
+        <div>
+
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          Link with href
+        </a>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <h4 class="progress-h">Moje poznavanje Front-end tehnologja</h4>
+
+      <div class="progress-example">
+        <p class="h5">Moja strategija ucenja Front-end tehnologija</p>
+        <div class="row">
+          <div class="col-md-3">
+            <p class="progress-p progress-mh">HTML</p>
+            <p class="progress-p">
+              Jedna od dve najosnovnije tehnologije za kreiranje web sajtova,
+              kao i aplikacija, jeste HTML. Veoma prost za koriscenje, i dalje
+              krije mnogo stvari i malih tajni koji razlikuju prosecne od
+              najboljih developera. Moj cilj je da sto bolje usavrsim ovaj
+              racunarski jezik, kako nikada u daljoj karijeri ne bih imao
+              poteskoca sa njim. Dobro poznavanje HTML-a moze nam samo olaksati
+              i ubrzati izradu skleteta sajta.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="progress-p progress-mh">CSS</p>
+            <p class="progress-p">
+              Odmah uz HTML, stoji racunarski jezik bez kog nasi web sajtovi ne
+              bi izgledali ovako kako izgledaju danas, svemocni CSS. Dobrim
+              poznavanjem ovog racunarskog jezika, kao i njegovih pretprocesora,
+              poput LESS-a i SASS-a, mozemo nas sajt urediti na bezbroj nacina.
+              Sam CSS sa sobom nosi dva prejaka alata, FlexBox i CSS Grid, koji
+              cine osnovu svih modernih web sajtova. Cilj mi je da usavrsim CSS
+              na vrhunskom nivou kako bih kasnije mogao sa lakocom svaki dizajn
+              da pretvorim u funkcionalni kod.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="progress-p progress-mh">JavaScript</p>
+            <p class="progress-p">
+              JavaScript, programski jezik koji koriste svi web devoleperi zarad
+              ozivljavanja svog sajta ili aplikacije. Skriptovni jezik bez koga
+              ne mozemo da zamislimo danasnje sajtove, podjednako je bitan kao i
+              HTML i CSS. Za sada, nisam se toliko usredsredio na JavaScript
+              koliko na HTML, a narucito CSS. Posto sam na samom pocektu, nadam
+              se svoje uspesne front-end karijere, trenutno u planu imam
+              usavrsavanje HTML-a, a pogotovo CSS-a. Verujem da izazov koji
+              JavaScript nosi sa sobom nece da bude toliko tezak s'obzirom na
+              moje poznavanje drugih programskih jezika.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="progress-p progress-mh">Bootstrap</p>
+            <p class="progress-p">
+              Tehnologija koje je u meni probudila ljubav na prvi pogled. Jedan
+              jedini, po meni, nezamenjivi Bootstrap. Toliko moci se krije u
+              ovom front-end alatu da je to, nama developerima pocetnicima
+              neshvatljivo. I ako mobile-first orjentisan, sto je mozda u
+              poslednjih par godina i postao standard, Bootstrap nudi pregrst
+              mogucnosti, i zajedno sa tim olaksava postao svima nama. Bootstrap
+              sam poceo da ucim vrlo skoro, i ovo je prvi projekat koji cu
+              odraditi uz njegovu pomoc.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="progressbar">
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            role="progressbar"
+            style="width: 80%"
+            aria-valuenow="80"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            80%
+          </div>
+        </div>
+        <div class="progress-text progress-mh">
+          <p>Poznavanje HTML-a</p>
+        </div>
+        <div class="progress">
+          <div
+            class="
+              progress-bar progress-bar-striped
+              bg-success
+              progress-bar-animated
+            "
+            role="progressbar"
+            style="width: 65%"
+            aria-valuenow="65"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            65%
+          </div>
+        </div>
+        <div class="progress-text progress-mh">
+          <p>Poznavanje CSS-a(FlexBox, CSS grid...)</p>
+        </div>
+        <div class="progress">
+          <div
+            class="
+              progress-bar progress-bar-striped
+              bg-warning
+              progress-bar-animated
+            "
+            role="progressbar"
+            style="width: 20%"
+            aria-valuenow="20"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            20%
+          </div>
+        </div>
+        <div class="progress-text progress-mh">
+          <p>Poznavanje JavaScript-a</p>
+        </div>
+        <div class="progress">
+          <div
+            class="
+              progress-bar progress-bar-striped
+              bg-info
+              progress-bar-animated
+            "
+            role="progressbar"
+            style="width: 50%"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            50%
+          </div>
+        </div>
+        <div class="progress-text progress-mh">
+          <p>Poznavanje Bootstrap-a</p>
+        </div>
+      </aside>
+
+      <aside class="ball-moving">
+        <h5 class="ball-moving-h">
+          Jedna od najvaznijih stvari koju svaki developer mora da zna...
+        </h5>
+        <p class="ball-p">
+          Po mom skromnom misljenju, jedan od
+          <strong>top 3 najvaznijih</strong> skill-ova svakog front-end
+          devolopera jeste koriscenje...
+        </p>
+        <a href="https://www.google.com/" target="_blank" class="google-a">
+          <span class="letter blue">G</span>
+          <span class="letter red">O</span>
+          <span class="letter yellow">O</span>
+          <span class="letter blue">G</span>
+          <span class="letter green">L</span>
+          <span class="letter red">E</span>
+          <span class="letter">-a</span>
+        </a>
+        <p class="ball-p">
+          Bas tako, Google krije mnoge tajne, i sajtovi poput Stackoverflow-a,
+          MDN Web Docs-a, itd..., mogu nam ustedeti mnogo vremena, i tako n(v)as
+          spasiti nepotrebnog gubljenja zivaca :)
+        </p>
+      </aside>
+    </article>
+    <footer class="footer">
+      <div class="instagram">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style="fill: #000000"
+          class="insta-icon"
+        >
+          <path
+            d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+          ></path>
+        </svg>
+        <a
+          href="https://www.instagram.com/luka.spasic/"
+          target="_blank"
+          class="insta-link"
+          >Instagram</a
+        >
+      </div>
+      <div class="twitter">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          style="fill: #000000"
+          class="twitter-icon"
+        >
+          <path
+            d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"
+          ></path>
+        </svg>
+        <a
+          href="https://twitter.com/neidezivot_"
+          target="_blank"
+          class="twitter-link"
+          >Twitter</a
+        >
+      </div>
+      <div class="youtube">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style="fill: #000000"
+          class="youtube-icon"
+        >
+          <path
+            d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"
+          ></path>
+        </svg>
+        <a
+          href="https://www.youtube.com/channel/UC7xxvUbHobyxDtxlLsyqf-Q"
+          target="_blank"
+          class="youtube-link"
+          >YouTube</a
+        >
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+      integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
